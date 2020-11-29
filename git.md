@@ -11,8 +11,9 @@
 
 > `git merge 指定分支` ：合并某分支到当前分支：这次合并是“快进模式”，也就是直接把master指向dev的当前提交 
 
-> `git branch -d 指定分支`： 删除某指定分支
-> 
+> `git branch -d 指定分支`： 删除某指定分支  
+
+>`git merge --no-ff -m "merge with no-ff" dev` :准备合并dev分; --no-ff参数，表示禁用Fast forward；本次合并要创建一个新的commit，所以加上-m参数，把commit描述写进去
 # 常用命令
 
 * git init 把这个目录变成Git可以管理的仓库
