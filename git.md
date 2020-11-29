@@ -14,10 +14,18 @@
 
     ###  提交修改和提交新文件都有执行两步：git add 和 git commit
 * git checkout：让这个文件回到最近一次git commit或git add时的状态
-    > `git checkout -- 文件名`
-注解：_丢弃工作区的修改_
+    > `git checkout -- 文件名`  
+注解：_丢弃工作区的修改_，git checkout其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原
+* git rm:从版本库中删除该文件
+    > `git rm 文件名`：执行后要再执行git commit
 
+* git remote:在本地创建了一个Git仓库后，又想在GitHub创建一个Git仓库，让这两个仓库进行远程同步
+    > `git remote add origin https://github.com/lifengand1992/gitNote.git`:
+    https://github.com/lifengand1992/gitNote.git :远程仓库地址 
 
+    注解：_添加后，远程库的名字就是origin；这是Git默认的叫法，也可以改成别的_
+* git push:把本地库的所有内容推送到远程库上
+    > `git push -u origin master`：
 *****
 * git reset:版本回退
     > `git reset --hard HEAD^`: 回退到上一个版本 
