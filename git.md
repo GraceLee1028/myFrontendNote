@@ -15,9 +15,9 @@
     ###  提交修改和提交新文件都有执行两步：git add 和 git commit
 * git checkout：让这个文件回到最近一次git commit或git add时的状态
     > `git checkout -- 文件名`
+注解：_丢弃工作区的修改_
 
 
-    testetsts
 *****
 * git reset:版本回退
     > `git reset --hard HEAD^`: 回退到上一个版本 
