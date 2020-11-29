@@ -1,12 +1,18 @@
 #  分支管理
+> `git switch -c dev`:创建并切换到新的dev分支；【分支切换常用switch】
+
+> `git switch master`：直接切换到已有的master分支【或者git checkout master】
+
 > `git checkout -b dev`:创建dev分支，然后切换到dev分支：git checkout命令加上-b参数表示创建并切换，相当于以下两条命令 [git branch , git checkout]
 
-> `git branch`:  查看当前所有分支，当前分支前面会标一个*号 
+     `git branch`:  查看当前所有分支，当前分支前面会标一个*号 
+     `git branch 新的分支名`: 创建分支  
+     `git checkout 分支名`: 切换到某分支
 
-> `git branch 新的分支名`: 创建分支  
+> `git merge 指定分支` ：合并某分支到当前分支：这次合并是“快进模式”，也就是直接把master指向dev的当前提交 
 
-> `git checkout 分支名`: 切换到某个分支
-
+> `git branch -d 指定分支`： 删除某指定分支
+> 
 # 常用命令
 
 * git init 把这个目录变成Git可以管理的仓库
