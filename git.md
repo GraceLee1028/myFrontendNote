@@ -1,3 +1,14 @@
+#  分支管理
+> `git checkout -b dev`:创建dev分支，然后切换到dev分支：git checkout命令加上-b参数表示创建并切换，相当于以下两条命令 [git branch , git checkout]
+
+> `git branch`:  查看当前所有分支，当前分支前面会标一个*号 
+
+> `git branch 新的分支名`: 创建分支  
+
+> `git checkout 分支名`: 切换到某个分支
+
+# 常用命令
+
 * git init 把这个目录变成Git可以管理的仓库
     > `git init` 
 
@@ -19,13 +30,14 @@
 * git rm:从版本库中删除该文件
     > `git rm 文件名`：执行后要再执行git commit
 
-* git remote:在本地创建了一个Git仓库后，又想在GitHub创建一个Git仓库，让这两个仓库进行远程同步
+* git remote:关联一个远程库;[在本地创建了一个Git仓库后，又想在GitHub创建一个Git仓库，让这两个仓库进行远程同步]
     > `git remote add origin https://github.com/lifengand1992/gitNote.git`:
     https://github.com/lifengand1992/gitNote.git :远程仓库地址 
 
     注解：_添加后，远程库的名字就是origin；这是Git默认的叫法，也可以改成别的_
 * git push:把本地库的所有内容推送到远程库上
-    > `git push -u origin master`：
+    > `git push -u origin master`：第一次推送master分支的所有内容
+    > `git push origin master`：推送最新修改
 *****
 * git reset:版本回退
     > `git reset --hard HEAD^`: 回退到上一个版本 
