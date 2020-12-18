@@ -19,3 +19,4 @@
 # npm
 
 - `npm install -g npm@latest` ：npm 安装到最新版本
+- `npm install -g cnpm --registry=https://registry.npm.taobao.org`:
