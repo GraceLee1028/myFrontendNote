@@ -1,20 +1,107 @@
 # vue
-- vue-cli
 
-    ```
-    <!--卸载vue-cli-->
-    npm uninstall -g vue-cli
+- webpack 安装
 
-    <!--安装vue-cli-->
-    npm install -g @vue/cli
-    # OR
-    yarn global add @vue/cli
-    ```
-- vue 
-    ```
-    vue --version:查看vue版本
-    ```
--   `vue create hello-world`：创建项目，hello-world项目名称
+  ```
+  <!--webpack 安装-->
+  npm i webpack@4.44.1 -g
+
+  <!--安装webpack-cli-->
+  npm install -g webpack-cli@3.3.12
+  # OR
+  yarn global add webpack-cli@3.3.12
+  <!-- 卸载 -->
+  npm uninstall -g webpack
+  npm uninstall -g webpack-cli
+  ```
+
+- webpack
+  ```
+  webpack -v:查看webpack版本
+  webpack-cli -v:查看webpack-cli版本
+  ```
+- css 解析
+  ```
+  npm i style-loader css-loader -D
+  注释：style-loader:把css通过style的方式插入到html的head中；
+  css-loader：解析css[因为webpack不能解析css]
+  npm i mini-css-extract-plugin -D
+  注解: 将css提取成一个css文件，通过link方式插入到html的head中，与style-loader对立；
+  相关代码：
+  ```
+- less 相关解析
+  ```
+  yarn add less less-loader --dev
+  或者
+  npm i less less-loader -D
+  相关代码：
+  ```
+- SCSS 相关解析
+  ```
+  yarn add node-sass sass-loader --dev
+  相关代码：
+  ```
+- px 转换为 rem 相关解析
+  ```
+  yarn add px2rem-loader --dev
+  yarn add lib-flexible --dev
+  注解：
+  相关代码：
+  ```
+- css3 的属性增强添加前缀 相关解析
+
+  ```
+  yarn add postcss-loader autoprefixer --dev
+  注解：
+  相关代码：
+  ```
+
+- 图片或字体 相关解析
+
+  ```
+  yarn add file-loader --dev
+  或者
+  yarn add url-loader --dev
+  注解：url-loader:可以通过limit：10240；设置图片小于10k的图片转换为base64的方式进行；
+  相关代码：
+  ```
+
+- 压缩 相关解析
+
+  ```
+  <!-- css压缩 -->
+  yarn add optimize-css-assets-webpack-plugin cssnano  --dev
+  <!-- html的压缩 -->
+  yarn add html-webpack-plugin  --dev
+  <!-- js压缩 webpack4以及内置了uglify-webpack-plugin 插件处理js的压缩,不用再另外增加 -->
+  相关代码：
+  ```
+
+- 静态资源内联 相关解析
+
+  ```
+  <!-- 资源内联 -->
+  yarn add raw-loader  --dev
+  相关代码：
+  ```
+
+- 自动清理构建目录 dist 相关解析
+
+  ```
+  <!-- 资源内联 -->
+  yarn add clean-webpack-plugin  --dev
+  相关代码：
+  ```
+
+- 多页面打包
+
+  ```
+  <!-- 资源内联 -->
+  yarn add glob  --dev
+  相关代码：
+
+
+  ```
 
 # npm
 
