@@ -196,7 +196,7 @@
 
 
   ```
-
+test
 # npm
 
 - `npm install -g npm@latest` ：npm 安装到最新版本
