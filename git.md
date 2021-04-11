@@ -1,3 +1,7 @@
+# 克隆代码
+```
+git clone 远程地址
+```
 #  分支管理
 > `git switch -c dev`:创建并切换到新的dev分支；【分支切换常用switch】
 
